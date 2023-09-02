@@ -1,0 +1,6 @@
+
+<div class="parent-component">
+    <h1>ToDo App</h1>
+    <app-add-task (taskAdded)="addTask($event)"></app-add-task>
+    <app-task-list [tasks]="tasks" (taskDeleted)="deleteTask($event)"></app-task-list>
+  </div>
